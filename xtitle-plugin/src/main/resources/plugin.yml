@@ -1,0 +1,13 @@
+name: XTitle
+main: org.lone64.xtitle.XTitle
+author: lone64
+version: 1.0.0
+api-version: '1.17'
+description: XTitle 플러그인
+permissions:
+  xtitle.admin:
+    default: op
+    description: XTitle 플러그인 관리자 권한
+commands:
+  칭호:
+    description: XTitle 플러그인 명령어

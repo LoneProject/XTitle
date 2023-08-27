@@ -1,0 +1,4 @@
+rootProject.name = "XTitle"
+
+include ":xtitle-api"
+include ":xtitle-plugin"
