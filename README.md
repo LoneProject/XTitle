@@ -61,7 +61,7 @@ Maven에서 API 사용 방법
 ```
 
 플러그인 API 이벤트 목록
-- PrefixChatFormatEvent (채팅 형식을 정할 수 있는 이벤트)
+- PrefixChatFormatEvent (채팅 형식을 설정할 수 있는 이벤트)
 - CreatedPrefixEvent (칭호가 생성될 때 발동되는 이벤트)
 - DeletedPrefixEvent (칭호가 삭제될 때 발동되는 이벤트)
 - SelectedPrefixEvent (칭호가 적용될 때 발동되는 이벤트)
