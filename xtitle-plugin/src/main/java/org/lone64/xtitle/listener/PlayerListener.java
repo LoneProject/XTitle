@@ -131,10 +131,12 @@ public class PlayerListener implements Listener {
             s1 = prefix.getPrefix();
             s2 = prefix.getSuffix();
         }
-        event.setFormat(ColorUtil.fetchColor(s1 + event.getPlayer().getName() + s2 + "&f: ") + event.getMessage());
-        PrefixChatFormatEvent e = new PrefixChatFormatEvent(event.getPlayer(), s1, s2, event.getMessage(), event.getFormat(), event.isCancelled());
-        event.setCancelled(e.isCancelled());
+
+        PrefixChatFormatEvent e = new PrefixChatFormatEvent(event.getPlayer(), s1, s2, event.getMessage(),
+                (ColorUtil.fetchColor(s1 + event.getPlayer().getName() + s2 + "&f: ") + event.getMessage()), event.isCancelled());
         Bukkit.getPluginManager().callEvent(e);
+        event.setFormat(e.getFormat());
+        event.setCancelled(e.isCancelled());
     }
 
 }
