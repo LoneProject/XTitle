@@ -34,30 +34,12 @@ depend:
 Gradle에서 API 사용 방법
 ```groovy
 repositories {
-    maven { url "http://repository.lone64.org:8081/repository/maven-public/" }
+    maven { url "http://repository.lone64.org:8081/repository/maven-public/"; allowInsecureProtocol = true }
 }
 
 dependencies {
     compileOnly "org.lone64:api-xtitle:1.0.0a"
 }
-```
-
-Maven에서 API 사용 방법
-```xml
-<repositories>
-    <repository>
-        <id>LoneProject</id>
-        <url>http://repository.lone64.org:8081/repository/maven-public/</url>
-    </repository>
-</repositories>
-
-<dependencies>
-    <dependency>
-        <groupId>org.lone64</groupId>
-        <artifactId>api-xtitle</artifactId>
-        <version>1.0.0a</version>
-    </dependency>
-</dependencies>
 ```
 
 플러그인 API 이벤트 목록
