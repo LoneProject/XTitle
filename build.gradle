@@ -3,6 +3,6 @@ subprojects {
 
     repositories {
         maven { url = "https://repo.papermc.io/repository/maven-public/" }
-        maven { url = "https://repo.loneproject.org/repository/maven-public/" }
+        maven { url = "https://repo.lone64.org/repository/maven-public/" }
     }
 }
